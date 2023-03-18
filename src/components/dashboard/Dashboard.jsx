@@ -1,5 +1,6 @@
 import React from 'react'
 import CurtainCard from './CurtainCard'
+import Dropdown from './Dropdown'
 import LightCard from './LightCard'
 import TempCard from './TempCard'
 
@@ -16,11 +17,11 @@ const Dashboard = () => {
             </div>
             <div>
                 <div className='mb-6'><TempCard /></div>
-                <div className='mb-6'><CurtainCard/></div>
             </div>
             <div>
-                <div className='mb-6'></div>
+            <div className='mb-6'><CurtainCard/></div>
             </div>
+            <div><Dropdown/></div>
         </div>
     </div>
     )
