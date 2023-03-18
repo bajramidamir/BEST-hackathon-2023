@@ -5,8 +5,7 @@ import LandingPage from './components/landing_page/LandingPage';
 
 function App() {
 
-  const [loggedIn, setLoggedIn] = useState(true);
-
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div >
