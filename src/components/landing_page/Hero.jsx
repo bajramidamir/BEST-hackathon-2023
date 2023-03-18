@@ -9,7 +9,7 @@ const Hero = () => {
                 <p className='text-7xl text-emerald-600 mb-4 text-center font-semibold'>GreenHouse</p>
                 <p className='text-center text-4xl mb-4'>Green homes for a greener Earth.</p>
                 <div className='flex justify-center'>
-                    <button type="button" class="text-gray-700 px-3 py-2 text-center bg-gray-100 border shadow-lg rounded-lg ">
+                    <button type="button" class="text-gray-700 px-3 py-2 hover:px-5 transition duration-300 ease-in-out text-center bg-gray-100 border shadow-lg rounded-lg ">
                         Sign in with Google
                     </button>
                 </div>
