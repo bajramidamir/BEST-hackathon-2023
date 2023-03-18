@@ -2,9 +2,6 @@ import React from 'react'
 import { auth } from '../../firebase'
 
 const DashboardHeader = () => {
-
-    
-
     return (
         <header className='text-white p-6 bg-emerald-400 mb-8 flex justify-between tracking-widest'>
                 <h1 className='text-center text-5xl font-semibold'>DASHBOARD</h1>
