@@ -3,6 +3,7 @@ import Hero from './Hero';
 import Footer from "./Footer"
 import LandingPageHeader from './LandingPageHeader';
 
+
 const LandingPage = () => {
   return (
     <div>
