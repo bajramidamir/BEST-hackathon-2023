@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import Dashboard from './components/dashboard/Dashboard';
 import LandingPage from './components/landing_page/LandingPage';
 
 
 function App() {
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
 
   return (
-    <div className='bg-slate-100'>
+    <div >
       {loggedIn ? <Dashboard /> : <LandingPage /> }
     </div>
   )
