@@ -8,7 +8,7 @@ const CurtainCard = () => {
     };
 
   return (
-    <div className=' shadow-lg p-4 rounded-lg grid grid-cols-2'>
+    <div className='bg-slate-50 shadow-lg p-4 rounded-lg grid grid-cols-2'>
     <div >
         {Value>0? <img  src= "https://www.svgrepo.com/show/429450/blinds-circus-curtain.svg" /> : <img src="https://www.svgrepo.com/show/293751/curtain.svg"  />}
     </div>

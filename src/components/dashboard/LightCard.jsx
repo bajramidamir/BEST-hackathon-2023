@@ -12,8 +12,8 @@ const LightCard = () => {
   };
 
   return (
-    <div className=' shadow-lg p-4 rounded-lg grid grid-cols-2'>
-    <div >
+    <div className='bg-slate-50 shadow-lg p-4 rounded-lg grid grid-cols-2'>
+    <div>
         {(Value>0) ? <img  src= "https://www.svgrepo.com/show/507205/bulb-on.svg" /> : <img src="https://www.svgrepo.com/show/507551/bulb.svg"  />}
     </div>
     <div>
