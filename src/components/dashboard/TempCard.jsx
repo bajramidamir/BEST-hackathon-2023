@@ -6,9 +6,9 @@ const TempCard = () => {
 
 
   const handleTempChange = ( operation ) => {
-    if (operation === "increment")  {
+    if (operation === "increment" && temperatureValue < 40)   {
       setTemperatureValue(temperatureValue + 1)
-    } else if (operation === "decrement") {
+    } else if (operation === "decrement" && temperatureValue > 5) {
       setTemperatureValue(temperatureValue - 1)
     }
   }
