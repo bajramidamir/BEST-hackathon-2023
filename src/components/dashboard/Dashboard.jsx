@@ -21,11 +21,13 @@ const Dashboard = () => {
                 </div>
                 <div>
                     <div className='mb-6'><TempCard /></div>
-                    <div className='mb-6'><CurtainCard/></div>
+                    
                 </div>
                 <div>
-                    <div className='mb-6'><Dropdown /></div>
+                <div className='mb-6'><CurtainCard/></div>
+                    
                 </div>
+                <div><div className='mb-6'><Dropdown /></div></div>
             </div>
         </div>
     </div>
