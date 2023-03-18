@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Hero from './Hero';
+import Footer from "./Footer"
 
 const LandingPage = () => {
   return (
     <div>
-        <img src="assets/landing-wave.svg" className='bg-no-repeat' />
-
-        <div>
-            <p className='my-4 text-7xl text-center font-bold'>GreenHouse</p>
-            <p className='text-emerald-600 font-semibold text-2xl text-center'>Green homes for a greener Earth</p>
+        <div className='mb-6'>
+            <img src="assets/waves.svg"  />
         </div>
+       
+        <Hero />
+        <Footer />
 
     </div>
   )
