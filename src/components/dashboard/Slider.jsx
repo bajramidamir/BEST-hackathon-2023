@@ -8,7 +8,7 @@ function RangeSlider() {
   };
 
   return (
-    <input id="default-range" type="range" value= {Value} className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700'></input>
+    <input id="default-range" type="range" value= {Value} className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-400' onChange={handleChange}></input>
      
   );
 }

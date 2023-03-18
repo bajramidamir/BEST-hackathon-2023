@@ -1,24 +1,20 @@
 import React, { useState } from 'react'
 //https://i.natgeofe.com/k/8fa25ea4-6409-47fb-b3cc-4af8e0dc9616/red-eyed-tree-frog-on-leaves-3-2_3x2.jpg
 const CurtainCard = () => {
-  
-  const [flag, setFlag] = useState(false);
+    const [Value, setValue] = useState(50);
 
-
-  const handleFlagChange = () => {
-    setFlag(!flag)
-  }
+    const handleChange = (e) => {
+      setValue(e.target.value);
+    };
 
   return (
     <div className=' shadow-lg p-4 rounded-lg grid grid-cols-2'>
     <div >
-        {flag? <img  src= "https://www.svgrepo.com/show/508113/lock-open.svg" /> : <img src="https://www.svgrepo.com/show/502759/lock-photo.svg"  />}
+        {Value>0? <img  src= "https://www.svgrepo.com/show/508113/lock-open.svg" /> : <img src="https://www.svgrepo.com/show/502759/lock-photo.svg"  />}
     </div>
     <div>
-      <div className='h-2/5'>
-        cutrain 
-      </div>
-      <button onClick={handleFlagChange} className='h-2/5  mt-1' > this is a button </button>
+      <p className='text-xl font-extrabold mb-8 mt-8'>Zavjesa</p>
+      <input id="default-range" type="range" value= {Value} className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-400' onChange={handleChange}></input>
     </div>
     </div>
   )
