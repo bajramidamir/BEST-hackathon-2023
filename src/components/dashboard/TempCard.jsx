@@ -23,10 +23,20 @@ const TempCard = () => {
     fetchData();
   }, [db]);
 
-  const handleUpdate = async () => {
+  const handleUpdateIncrement = async () => {
     const docRef = doc(db, 'rooms', 'room-1');
+    if (data.tempValue < 40) {
     await updateDoc(docRef, { tempValue: data.tempValue + 1 });
     setData(prevData => ({ ...prevData, tempValue: data.tempValue + 1 }));
+    }
+  };
+
+  const handleUpdateDecrement = async () => {
+    const docRef = doc(db, 'rooms', 'room-1');
+    if (data.tempValue > 5) {
+    await updateDoc(docRef, { tempValue: data.tempValue - 1 });
+    setData(prevData => ({ ...prevData, tempValue: data.tempValue - 1 }));
+    }
   };
 
   if (loading) {
@@ -38,11 +48,11 @@ const TempCard = () => {
             <img className="px-2" src="/assets/temp.svg" alt="" />
             <div>
                 <h3 className='text-xl font-extrabold overflow-clip'>Temperature</h3>
-                <button onClick={handleUpdate} >
+                <button onClick={handleUpdateIncrement} >
                   <img className='w-14' src="/assets/up.svg" alt="" />
                 </button>
                 <p className='text-5xl mb-2'>{data.tempValue}°C</p>
-                <button >
+                <button onClick={handleUpdateDecrement}>
                   <img className='w-14' src="/assets/down.svg" alt="" />
                 </button>
             </div>

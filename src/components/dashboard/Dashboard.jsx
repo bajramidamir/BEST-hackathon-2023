@@ -9,7 +9,6 @@ import TempCard from './TempCard';
 
 const Dashboard = () => {
 
-
   return (
     <div className='bg-slate-100 text-slate-800 h-screen'>
         <DashboardHeader />
