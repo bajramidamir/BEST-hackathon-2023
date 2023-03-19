@@ -1,6 +1,6 @@
 import { GoogleAuthProvider, signInWithPopup, signInWithRedirect } from 'firebase/auth';
 import React from 'react';
-import { auth } from '../../firebase';
+import { auth, db } from '../../firebase';
 
 const Hero = () => {
 
@@ -18,7 +18,7 @@ const Hero = () => {
                         <p className='text-7xl text-emerald-600 mb-4 text-center font-semibold'>GreenHouse</p>
                         <p className='text-center text-4xl mb-4'>Green homes for a greener Earth.</p>
                         <div className='flex justify-center'>
-                            <button type="button" onClick={userSignIn} class="px-3 flex items-center py-2 hover:shadow-sm hover:bg-blue-600 hover:text-white transition duration-300 ease-linear text-center bg-gray-100 shadow-2xl rounded-lg ">
+                            <button type="button" onClick={userSignIn} className="px-3 flex items-center py-2 hover:shadow-sm hover:bg-blue-600 hover:text-white transition duration-300 ease-linear text-center bg-gray-100 shadow-2xl rounded-lg ">
                                 <img src="assets/socials-icons/google.svg" className='w-12 px-2' alt="" />
                                 Sign in with Google
                             </button>
