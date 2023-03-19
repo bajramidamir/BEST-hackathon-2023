@@ -14,7 +14,7 @@ const CurtainCard = () => {
     </div>
     <div>
       <p className='text-xl font-extrabold mb-8 mt-8'>Zavjesa</p>
-      <input id="default-range" type="range" value= {curtainValue} className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-400' onChange={handleChange}></input>
+      <input id="default-range" type="range" value= {curtainValue} className='w-full h-4 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-400' onChange={handleChange}></input>
     </div>
     </div>
   )
