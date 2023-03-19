@@ -14,7 +14,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-          const docRef = doc(db, "rooms", "room-2");
+          const docRef = doc(db, "rooms", "room-1");
           const docSnap = await getDoc(docRef);
     
           if (docSnap.exists()) {
@@ -42,11 +42,11 @@ const Dashboard = () => {
                     <div className='mb-6'><LightCard  /></div>
                 </div>
                 <div>
-                    <div className='mb-6'><TempCard tempVal={data.tempValue}  /></div>
-                    <div className='mb-6'><CurtainCard/></div>
+                    <div className='mb-6'><TempCard val={data.tempValue} /></div>
+                    <div className='mb-6'><CurtainCard /></div>
                 </div>
                 <div>
-                <div className='mb-6'><CurtainCard/></div>
+                
                     
                 </div>
                 <div><div className='mb-6'><Dropdown /></div></div>
