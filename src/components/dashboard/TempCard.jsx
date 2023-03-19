@@ -9,6 +9,7 @@ const TempCard = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // uzimamo podatke iz Firebasea za temp. sobe
   useEffect(() => {
     const fetchData = async () => {
       const docRef = doc(db, 'rooms', 'room-1');
@@ -52,7 +53,7 @@ const TempCard = () => {
                   <img className='w-14' src="/assets/up.svg" alt="" />
                 </button>
                 <p className='text-5xl mb-2'>{data.tempValue}°C</p>
-                <button onClick={handleUpdateDecrement}>
+                <button onClick={handleUpdateDecrement} >
                   <img className='w-14' src="/assets/down.svg" alt="" />
                 </button>
             </div>

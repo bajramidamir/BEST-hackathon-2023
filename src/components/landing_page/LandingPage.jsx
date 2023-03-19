@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Footer from "./Footer"
 import LandingPageHeader from './LandingPageHeader';
 
-
+// maksimalno razbijeni komponenti za vas uzitak
 const LandingPage = () => {
   return (
     <div>

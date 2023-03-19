@@ -1,6 +1,6 @@
-import { GoogleAuthProvider, signInWithPopup, signInWithRedirect } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import React from 'react';
-import { auth, db } from '../../firebase';
+import { auth } from '../../firebase';
 
 const Hero = () => {
 
