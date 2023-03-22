@@ -12,7 +12,7 @@ const Dashboard = () => {
     <div className='bg-slate-100 text-slate-800 h-screen'>
         <DashboardHeader />
         <div className='flex'>
-            <div className='mx-auto mt-16 mb-64 w-4/5 text-center grid grid-cols-2 md:grid-cols-4 gap-4 overflow-x-auto'>
+            <div className='mx-auto mt-16 mb-64 w-4/5 text-center grid grid-cols-1 md:grid-cols-4 gap-4 overflow-x-auto'>
                 <div>
                     <div className='mb-6'><LightCard  /></div>
                 </div>

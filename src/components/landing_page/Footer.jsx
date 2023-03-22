@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='bg-emerald-400'>
-      <div className='mx-auto w-full container px-80'>
-        <div className='grid grid-cols-3 px-32 py-8 text-slate-200'>
+      <div className='mx-auto w-full container px-6 md:px-80'>
+        <div className='grid grid-cols-3 md:px-32 py-8 text-slate-200'>
           <div className='text-center '>
             <button>
               <a href="#">
